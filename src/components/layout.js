@@ -10,6 +10,9 @@ import Header from "./header"
 import { GlobalStyle } from "./styles/GlobalStyles"
 import '../components/styles/styles.scss'
 import Sidebar from './Sidebar'
+import Me from './meSection'
+import MouseScroll from './styles/mouseAnimated'
+import Skill from './skillComp'
 
 
 const Layout = ({ children }) => {
@@ -18,6 +21,8 @@ const Layout = ({ children }) => {
     <GlobalStyle />
       <Sidebar />
       <Header />
+      <Me />
+      <Skill />
         <main>{children}</main>
     </>
   )

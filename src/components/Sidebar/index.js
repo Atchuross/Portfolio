@@ -30,20 +30,21 @@ const Sidebar = () => {
 export default Sidebar;
 
 export function openSide() {
-    document.getElementById("side").style.opacity = "100%";
+    document.getElementById("side").style.opacity  = "100%";
     document.getElementById("side").style.top = "0%";
+    document.getElementById("side").style.width = "100%";
     console.log("Click !");
 }
 
 export function closeSide() {
-    document.getElementById("side").style.opacity = "0%";
-    document.getElementById("side").style.top = "-100%";
+    document.getElementById("side").style.display  = "0%";
+    document.getElementById("side").style.top = "-1000%";
     console.log("Click !");
 }
 
 export const SidebarMenu = styled(Link)`
     display: grid;
-    grid-template-column: 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 80px);
     text-align: center;
     
@@ -54,15 +55,15 @@ export const SidebarMenu = styled(Link)`
 
 export const SidebarContainer = styled.aside`
     position: fixed; 
-    background: #2B2D42;
+    background: #222a30;
     z-index: 999;
     height: calc(${window.screen.height}px);
-    width: 100%;
+    //width: 100%;
     display: grid;
     align-items: center;
     top: 0;
     left: 0; 
-    transition: 0.3s ease-in-out;
+    transition: 0.5s ease-in-out;
     opacity: 0%;
     top: -100%;
 `
@@ -109,13 +110,13 @@ export const SideBtnWrap = styled.div `
 
 export const SidebarBtnLink = styled(Link)`
     border-radius: 50px;
-    background: transparent;
+    background: #2a9d8f;
     white-space: nowrap;
     padding: 16px 64px;
     color: #EDF2F4;
     font-size: 1.5rem;
     outline: none;
-    border: 5px solid #2a9d8f;
+    border: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
