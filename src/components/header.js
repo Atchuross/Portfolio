@@ -5,6 +5,7 @@ import {FaBars} from 'react-icons/fa'
 import { menuData } from "../data/MenuData"
 import { openSide } from "../components/Sidebar/index";
 import scrollTo from 'gatsby-plugin-smoothscroll';
+import './skillComp'
 //import './styles/NavBar.scss'
 
 const Header = () => {
@@ -15,7 +16,7 @@ const Header = () => {
         <Bars onClick={openSide} />
         <NavMenu>
           {menuData.map((item, index) => (
-            <NavLink onClick={() => scrollTo('#idTest')} className="navigation" to={item.link} key={index}>
+            <NavLink onClick={() => scrollTo('#me_scroll')} className="navigation" key={index}>
               {item.title}
             </NavLink>
           ))}

@@ -11,7 +11,7 @@ const HomePage = () => {
             <h2 className="layer" data-speed="1" id="me">Hi, I'm <span id="me2"> &nbsp;Clément</span></h2>
             <p className="layer" data-speed="2" id="presentation" data-speed="1">Second-year IT developper student, <br/>my life-long study and practice code<br /> with some language like C#, HTML/CSS, Javascript.<br/> You can find several projects on ".projects()" </p>
             <section id="mouseAnimate">
-                <div class="mouse"></div>
+                <div className="mouse"></div>
                 <p id="scroll">Scroll</p>
             </section>
     </Section>
