@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import * as React from "react"
+ import React,{useEffect, Component }  from 'react';
 import Header from "./header"
 import { GlobalStyle } from "./styles/GlobalStyles"
 import '../components/styles/styles.scss'
@@ -13,6 +13,8 @@ import Sidebar from './Sidebar'
 import Me from './meSection'
 import MouseScroll from './styles/mouseAnimated'
 import Skill from './skillComp'
+import Experiences from './Experiences'
+import Waves from './styles/WavesTransition'
 
 
 const Layout = ({ children }) => {
@@ -23,6 +25,7 @@ const Layout = ({ children }) => {
       <Header />
       <Me />
       <Skill />
+      <Experiences />
         <main>{children}</main>
     </>
   )

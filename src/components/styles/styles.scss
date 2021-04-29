@@ -13,6 +13,22 @@ $green: #2a9d8f;
 // HEADER ///
 /////////////
 
+.dark-divider{
+    width: 100px;
+    height: 2px;
+    border: 1px solid $colorBg;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.white-divider{
+    width: 100px;
+    height: 2px;
+    border: 1px solid $white;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
 body{
     background-color: $colorBg !important;
     overflow-x: hidden;
@@ -37,8 +53,15 @@ body{
     font-size: 1rem;
     &:last-child{
         margin-right: 0px;
+        margin-left: 0px;
     }
     
+}
+
+#stick{
+    position: sticky;
+    top: 0;
+    z-index: 1001;
 }
 
 
@@ -60,6 +83,7 @@ body{
 
 .btn:hover{
     background-color: rgba(42, 157, 143, 0.3);
+    color: $white;
     transition: 0.3s;
 }
 
@@ -77,6 +101,7 @@ body{
     color: $white;
     font-size: 3rem;
     padding-bottom: 20px;
+    z-index: 999;
     @media (max-width: 1440px) {
         font-size: 3rem;
     }
@@ -109,10 +134,10 @@ body{
 
 #mouseAnimate{
     justify-content: center;
-    width: 1200px;
+    width: 1210px;
     padding-top: 300px;
     @media (max-width: 1440px) {
-        width: 800px;
+        width: 810px;
         padding-top: 100px;
     }
 }
@@ -123,9 +148,9 @@ body{
 }
 
 .mouse{
-    left: 48%;
+    left: 48.5%;
     @media (max-width: 1440px) {
-        left: 47%;
+        left: 46.5%;
     }
 }
 
@@ -149,6 +174,23 @@ body{
         display: flex;
         justify-content: center;
         font-family: $font;
+        padding-top: 50px;
+        @media (max-width: 1440px) {
+            font-size: 50px;
+        }
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    .AboutPersonal__Heading-dark{
+        font-size: 60px;
+        color: $colorBg;
+        line-height: 50px;
+        display: flex;
+        justify-content: center;
+        font-family: $font;
+        padding-top: 50px;
         @media (max-width: 1440px) {
             font-size: 50px;
         }
@@ -291,6 +333,15 @@ body{
 /////////////////
 //  FIN ABOUT  //
 /////////////////
+
+///////////
+//  EXP  //
+///////////
+
+
+///////////////
+//  FIN EXP  //
+///////////////
 
 @media (max-width: 768px) {
     #mouseAnimate{

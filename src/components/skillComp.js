@@ -10,6 +10,7 @@ import { Container, Row, Button} from 'react-bootstrap';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import { Tabs, TabLink, TabContent } from 'react-tabs-redux';
+import Waves from './styles/WavesTransition'
 
 
 const Skill = () => {
@@ -30,8 +31,9 @@ const Skill = () => {
   var Dart = 70;
   var FLUT = 70; 
   return (
-    <SectionMe>
-      <h2 className="AboutPersonal__Heading" id="me_scroll">.me(<span id="me2">Skill</span>)</h2>
+    <SectionMe id="skill">
+      <div className="white-divider" />
+      <h2 className="AboutPersonal__Heading">.about(<span id="me2">me.skill</span>)</h2>
         <Container className="AboutPersonal">
           <Row>
             <div className="AboutPersonal__LeftCol col-md-6">
@@ -197,6 +199,7 @@ const Skill = () => {
             </div>
           </Row>
         </Container>
+        <Waves />
     </SectionMe>
   )
 };
@@ -205,12 +208,12 @@ export default Skill
 
 export const SectionMe = styled.section`
   padding: 3em;
-  height: 90vh;
+  height: 100vh;
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
   padding-top: 50px;
   @media (max-width: 1440px){
-    height: 100vh;
+    height: 100%;
   }
 `

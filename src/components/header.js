@@ -1,29 +1,45 @@
-import React,{useEffect} from 'react';
+import React,{useEffect, useState} from 'react';
 import { Link } from "gatsby"
 import styled from 'styled-components'
 import {FaBars} from 'react-icons/fa'
 import { menuData } from "../data/MenuData"
 import { openSide } from "../components/Sidebar/index";
 import scrollTo from 'gatsby-plugin-smoothscroll';
+import { animateScroll as scroll } from 'react-scroll';
 import './skillComp'
 //import './styles/NavBar.scss'
 
 const Header = () => {
+  const [scrollNav, setScrollNav] = useState(false)
+
+  const changeNav = () => {
+    if(window.scrollY >= 1810){
+      setScrollNav(true)
+    }else{
+      setScrollNav(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeNav)
+  }, [])
+
   return (
-    
-      <Nav className='navigation'>
-        <NavLink to="/" className="logo">Explorix</NavLink>
+    <div id="stick">
+      <Nav className='navigation' scrollNav={scrollNav}>
+        <NavLink scrollNav={scrollNav} to="/" className="logo">Explorix</NavLink>
         <Bars onClick={openSide} />
         <NavMenu>
           {menuData.map((item, index) => (
-            <NavLink onClick={() => scrollTo('#me_scroll')} className="navigation" key={index}>
+            <NavLink 
+            scrollNav={scrollNav} to={item.loc} className="navigation" key={index}>
               {item.title}
             </NavLink>
           ))}
-          <NavBtnLink className="btn" to="/resume">Resume</NavBtnLink>
+          <NavBtnLink scrollNav={scrollNav} className="btn" to="/resume">Resume</NavBtnLink>
         </NavMenu>
       </Nav>
-      
+    </div>
   )
 };
   
@@ -50,6 +66,7 @@ const NavLink = styled(Link)`
   padding: 0.1rem;
   height: 100%;
   cursor: pointer;
+  color: #EDF2F4;
 `
 
 const Bars = styled(FaBars)`
