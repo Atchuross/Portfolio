@@ -3,9 +3,7 @@ import { Link } from "gatsby"
 import styled from 'styled-components'
 import {FaBars} from 'react-icons/fa'
 import { menuData } from "../data/MenuData"
-import { openSide } from "../components/Sidebar/index";
-import scrollTo from 'gatsby-plugin-smoothscroll';
-import { animateScroll as scroll } from 'react-scroll';
+import { openSide, closeSide } from "../components/Sidebar/index";
 import './skillComp'
 //import './styles/NavBar.scss'
 
@@ -36,7 +34,7 @@ const Header = () => {
               {item.title}
             </NavLink>
           ))}
-          <NavBtnLink scrollNav={scrollNav} className="btn" to="/resume">Resume</NavBtnLink>
+          <NavBtnLink scrollNav={scrollNav} className="btn" to="/">Resume</NavBtnLink>
         </NavMenu>
       </Nav>
     </div>

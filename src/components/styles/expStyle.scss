@@ -71,3 +71,56 @@ $green: #2a9d8f;
 .education-block a:hover{
     margin: 20% 0;
 }
+
+#resp1{
+    @media (max-width: 768px) {
+        margin-bottom: 80px;
+    }
+}
+
+#resp2{
+    @media (max-width: 1440px) {
+        margin-top: 80px;
+    }
+    @media (max-width: 768px) {
+        margin-bottom: 80px;
+    }
+}
+
+#resp3{
+    @media (max-width: 1440px) {
+        margin-top: 35px;
+    }
+    @media (max-width: 768px) {
+        margin-bottom: 80px;
+    }
+    
+}
+
+@media (max-height: 568px) {
+    #resp1{
+        font-size: 12px;
+    }
+    
+    #resp2{
+        font-size: 12px;
+    }
+    
+    #resp3{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 300px) {
+    #resp1{
+        font-size: 12px;
+    }
+    
+    #resp2{
+        font-size: 12px;
+    }
+    
+    #resp3{
+        font-size: 12px;
+    }
+}

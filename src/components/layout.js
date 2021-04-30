@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
- import React,{useEffect, Component }  from 'react';
+ import React,{useEffect, Component, useState }  from 'react';
 import Header from "./header"
 import { GlobalStyle } from "./styles/GlobalStyles"
 import '../components/styles/styles.scss'
@@ -18,11 +18,17 @@ import Waves from './styles/WavesTransition'
 
 
 const Layout = ({ children }) => {
+  const [isOpen, setIsOpen] = useState(false)
+
+  const toggle = () =>{
+    setIsOpen(!isOpen);
+  }
+
   return (
     <>
     <GlobalStyle />
-      <Sidebar />
-      <Header />
+      <Sidebar/>
+      <Header/>
       <Me />
       <Skill />
       <Experiences />

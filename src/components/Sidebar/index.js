@@ -7,6 +7,7 @@ import { menuData } from "/src/data/MenuData"
 
 const Sidebar = () => {
     return(
+        <div id="stick2">
         <SidebarContainer id='side'>
             <Icon>
                 <CloseIcon onClick={closeSide}/>
@@ -14,16 +15,17 @@ const Sidebar = () => {
             <SidebarWrapper>
                 <SidebarMenu>
                     {menuData.map((item, index) => (
-                        <SidebarLink className="navigation" to={item.link} key={index}>
+                        <SidebarLink onClick={closeSide} className="navigation" to={item.loc} key={index}>
                             {item.title}
                         </SidebarLink>
                     ))}
                 </SidebarMenu>
                 <SideBtnWrap>
-                <SidebarBtnLink className="btn-side" to="/resume">Resume</SidebarBtnLink>
+                <SidebarBtnLink onClick={closeSide} className="btn-side" to="/">Resume</SidebarBtnLink>
                 </SideBtnWrap>
             </SidebarWrapper>
         </SidebarContainer>
+        </div>
     )
 }
 
@@ -49,7 +51,7 @@ export const SidebarMenu = styled(Link)`
     text-align: center;
     
     @media screen and (max-width: 600px){
-        grid-template-rows(5, 60px);
+        grid-template-rows: (5, 60px);
     }
 `
 

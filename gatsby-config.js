@@ -39,6 +39,24 @@ module.exports = {
         display: 'swap'
       }
     },
+    // {
+    //   resolve: `gatsby-source-mysql`,
+    //   options: {
+    //     connectionDetails: {
+    //       host: 'db5002369762.hosting-data.io',
+    //       user: 'dbu570415',
+    //       password: 'Wuba-zrop-kgdu-9002',
+    //       database: 'dbs1897837'
+    //     },
+    //     queries: [
+    //       {
+    //         statement: 'SELECT * FROM compétence',
+    //         idFieldName: 'pourcentage',
+    //         name: 'Pourcentage'
+    //       }
+    //     ]
+    //   }
+    // },
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sass`,
