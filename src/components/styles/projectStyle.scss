@@ -1,0 +1,111 @@
+.fake-magicwall{
+    //background-color: rgba(255,255,255,.1);
+}
+
+.fake-magicwall ul {
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.fake-magicwall ul li {
+    width: 20%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.fake-magicwall .magic-wall_item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-transition: opacity .5s,-webkit-transform .4s;
+    transition: opacity .5s,-webkit-transform .4s;
+    -o-transition: transform .4s,opacity .5s;
+    transition: transform .4s,opacity .5s;
+    transition: transform .4s,opacity .5s,-webkit-transform .4s;
+}
+
+.fake-magicwall ul li .hover-content {
+    position: absolute;
+    z-index: 1;
+    opacity: 1;
+    font: normal normal 16px/20px "Open Sans",Arial,sans-serif;
+    text-align: center;
+    color: #fff;
+    background: rgba(0,0,0,.5);
+    -webkit-transition: rgba(0,0,0,.5) .15s ease-out;
+    -o-transition: rgba(0,0,0,.5) .15s ease-out;
+    transition: rgba(0,0,0,0) .15s ease-out;
+    width: 100%;
+    height: 100%;
+}
+
+.fake-magicwall ul li a.colorbox {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    background: url("https://jacekjeznach.com/wp-content/themes/new/img/circle.png") no-repeat center;
+    opacity: 0;
+    -webkit-transition: all .15s ease-out;
+    -o-transition: all .15s ease-out;
+    transition: all .15s ease-out;
+    -webkit-transform: scale(.2);
+    -ms-transform: scale(.2);
+    transform: scale(.2);
+}
+
+.fake-magicwall ul li:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+a {
+    color: #08fdd8;
+    -webkit-transition: color .3s;
+    -o-transition: color .3s;
+    transition: color .3s;
+    text-decoration: none;
+}
+
+#litest1:hover > div, #litest2:hover > div, #litest3:hover > div, #litest4:hover > div, #litest5:hover > div, #litest6:hover > div{
+    background: rgba(0,0,0,0);
+    transition: rgba(0,0,0,0) .15s ease-out; 
+}
+
+#litest1:hover > a, #litest2:hover > a, #litest3:hover > a, #litest4:hover > a, #litest5:hover > a, #litest6:hover > a{
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+
+// .fake-magicwall ul li .hover-content:hover {
+//     background: rgba(0,0,0,0);
+//     transition: rgba(0,0,0,0) .15s ease-out;
+//     .fake-magicwall ul li a.colorbox {
+//         opacity: 1;
+//         -webkit-transform: scale(1);
+//         -ms-transform: scale(1);
+//         transform: scale(1);
+        
+//     }
+// }
+
+

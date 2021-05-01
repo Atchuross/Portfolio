@@ -1,12 +1,11 @@
-import React,{useEffect} from 'react';
+import React from 'react';
 //import scrollTo from 'gatsby-plugin-smoothscroll';
 import sal from 'sal.js'
-import { Link } from "gatsby"
 import './styles/styles.scss'
 import "C:\\Users\\cleme\\Desktop\\New website\\Clone\\Portfolio\\node_modules\\sal.js\\dist\\sal.css"
 import styled from 'styled-components'
 import Moi from '../images/fondMe.jpg'
-import { Container, Row, Button} from 'react-bootstrap';
+import { Container, Row} from 'react-bootstrap';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import { Tabs, TabLink, TabContent } from 'react-tabs-redux';

@@ -1,8 +1,6 @@
 import * as React from "react"
 import styled from 'styled-components'
-import { menuData } from "../data/MenuData"
-import { openSide } from "../components/Sidebar/index";
-import scrollTo from 'gatsby-plugin-smoothscroll';
+import './styles/mouseAnimte.scss'
 
 
 const HomePage = () => {
@@ -17,7 +15,6 @@ const HomePage = () => {
     </Section>
   )
 }
-
 
 export default HomePage
 

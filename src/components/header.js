@@ -3,9 +3,8 @@ import { Link } from "gatsby"
 import styled from 'styled-components'
 import {FaBars} from 'react-icons/fa'
 import { menuData } from "../data/MenuData"
-import { openSide, closeSide } from "../components/Sidebar/index";
+import { openSide } from "../components/Sidebar/index";
 import './skillComp'
-//import './styles/NavBar.scss'
 
 const Header = () => {
   const [scrollNav, setScrollNav] = useState(false)

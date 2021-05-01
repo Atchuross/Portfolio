@@ -1,7 +1,6 @@
-.wave{
+.wave-reverse{
     position:
     absolute;
-    bottom: 0;
     left: 0;
     width: 100%;
     height: 100px;
@@ -13,36 +12,32 @@
     }
 }
 
-.wave1{
+.wave1-reverse{
     animation: animate 30s linear infinite;
     z-index: 999;
     opacity: 1;
     animation-delay: 0s;
-    bottom: 0;
 }
-.wave2{
+.wave2-reverse{
     animation: animate2 15s linear infinite;
     z-index: 998;
     opacity: 0.5;
     animation-delay: -5s;
-    bottom: 10;
 }
-.wave3{
+.wave3-reverse{
     animation: animate 15s linear infinite;
     z-index: 997;
     opacity: 0.7;
     animation-delay: -2s;
-    bottom: 15;
 }
-.wave4{
+.wave4-reverse{
     animation: animate 15s linear infinite;
     z-index: 996;
     opacity: 0.7;
     animation-delay: -5s;
-    bottom: 20;
 }
 
-#wave_section{
+#wave_section-reverse{
     padding-bottom: 10%;
 }
 

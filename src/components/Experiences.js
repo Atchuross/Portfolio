@@ -1,9 +1,8 @@
-import React,{useEffect, Component }  from 'react';
-import scrollTo from 'gatsby-plugin-smoothscroll';
+import React from 'react';
 import './styles/styles.scss'
 import './styles/expStyle.scss'
 import styled from 'styled-components'
-import { Container, Row, Button, Col} from 'react-bootstrap';
+import { Row, Col} from 'react-bootstrap';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
