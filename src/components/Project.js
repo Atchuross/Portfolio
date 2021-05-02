@@ -9,7 +9,7 @@ const Project = () => {
     <Projectsection>
         <WavesReverse />
         <Whitediv />
-        <Headersection className="AboutPersonal__Heading">.about(<span id="me2">me.skill</span>)</Headersection>
+        <Headersection className="AboutPersonal__Heading">.about(<span id="me2">me.project</span>)</Headersection>
         <br/>
         <div className="fake-magicwall" id="home-magicwalle">
             <ul>
@@ -39,7 +39,7 @@ const Project = () => {
                     <a href="/" className="colorbox cboxElement"></a>
                 </li>
                 <li id="litest6">
-                    <section className="magic-wall_item lazyloaded" style={{backgroundImage: `url("https://jacekjeznach.com/wp-content/uploads/2019/06/Bez-nazwy-3.jpg")`}}></section>
+                    <section className="magic-wall_item lazyloaded" style={{backgroundImage: `url("https://zupimages.net/up/21/17/8bpa.png")`}}></section>
                     <div className="hover-content vcenter"></div>
                     <a href="/" className="colorbox cboxElement"></a>
                 </li>

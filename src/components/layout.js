@@ -14,6 +14,7 @@ import Me from './meSection'
 import Skill from './skillComp'
 import Experiences from './Experiences'
 import Project from './Project'
+import Contact from './contact'
 
 
 const Layout = ({ children }) => {
@@ -26,6 +27,7 @@ const Layout = ({ children }) => {
       <Skill />
       <Experiences />
       <Project />
+      <Contact />
         <main>{children}</main>
     </>
   )
