@@ -7,7 +7,6 @@ import styled from 'styled-components'
 import Moi from '../images/fondMe.jpg'
 import { Container, Row} from 'react-bootstrap';
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.min.js";
 import { Tabs, TabLink, TabContent } from 'react-tabs-redux';
 import Waves from './styles/WavesTransition'
 
@@ -32,7 +31,7 @@ const Skill = () => {
   return (
     <SectionMe id="skill">
       <div className="white-divider" />
-      <h2 className="AboutPersonal__Heading">.about(<span id="me2">me.skill</span>)</h2>
+      <h2 className="AboutPersonal__Heading">.<span id="me2">about</span>()</h2>
         <Container className="AboutPersonal">
           <Row>
             <div className="AboutPersonal__LeftCol col-md-6">

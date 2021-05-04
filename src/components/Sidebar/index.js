@@ -3,12 +3,14 @@ import styled from 'styled-components'
 import { Link } from "gatsby"
 import { FaTimes } from 'react-icons/fa'
 import { menuData } from "/src/data/MenuData"
+import useWindowDimensions from '../useWindowDimensions'
 
 
 const Sidebar = () => {
+    // const { height, width } = useWindowDimensions();
     return(
         <div id="stick2">
-        <SidebarContainer id='side'>
+        <SidebarContainer id='side' style={{height: "800px"}}>
             <Icon>
                 <CloseIcon onClick={closeSide}/>
             </Icon>
@@ -59,7 +61,6 @@ export const SidebarContainer = styled.aside`
     position: fixed; 
     background: #222a30;
     z-index: 999;
-    height: calc(${window.screen.height}px);
     //width: 100%;
     display: grid;
     align-items: center;
@@ -101,7 +102,8 @@ export const SidebarLink = styled(Link) `
 
     &:hover{
         color: #2a9d8f;
-        transition: 0.2s ease-in-out
+        transition: 0.2s ease-in-out;
+        text-decoration: none;
     }
 `
 

@@ -15,6 +15,7 @@ import img12 from '../images/12.png'
 import {Helmet} from "react-helmet";
 import testScript from '../data/testScript'
 import HomePage from './HomePage'
+import bgSvg from "../images/Wavebg.svg"
 
 const Me = () => {
   return (
