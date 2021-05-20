@@ -4,7 +4,6 @@ import './styles/expStyle.scss'
 import styled from 'styled-components'
 import { Row, Col} from 'react-bootstrap';
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.min.js";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons'
 
@@ -13,7 +12,7 @@ const Experiences = () => (
     <Expsection id="experiences">
         <div className="container">
             <div className="dark-divider" />
-            <h2 className="AboutPersonal__Heading-dark">.work(<span id="me2">me.experiences</span>)</h2>
+            <h2 className="AboutPersonal__Heading-dark">.<span id="me2">experiences</span>()</h2>
             <Row className="exp-container">
                 <Col sm="4">
                     <div className="education-block">
@@ -24,7 +23,7 @@ const Experiences = () => (
                         <div className="dark-divider" />
                         <p>Creation of a cross-plateform application based on IOS & Android</p>
                         <p>Technologies and methods approach : <br />- Flutter<br />- Agile/SCRUM<br />- UML</p>
-                        <a href="docs/programme_cesi.pdf" id="resp1" class="btn btn-default" target="_blank">See Entreprise Website</a>
+                        <a href="https://lyon.cesi.fr" id="resp1" class="btn btn-default" target="_blank">See Entreprise Website</a>
                     </div>
                 </Col>
                 <Col sm="4">
@@ -36,7 +35,7 @@ const Experiences = () => (
                         <div className="dark-divider" />
                         <p>PHP module modification and addition for customer WordPress website</p>
                         <p>Bugfix on some PHP web app<br/>&nbsp;<br />&nbsp;<br/>&nbsp;</p>
-                        <a href="docs/programme_cesi.pdf" id="resp2" class="btn btn-default" target="_blank">See Entreprise Website</a>
+                        <a href="https://etoh.fr/en/" id="resp2" class="btn btn-default" target="_blank">See Entreprise Website</a>
                     </div>
                 </Col>
                 <Col sm="4">
@@ -49,7 +48,7 @@ const Experiences = () => (
                         <p>Discovery some project based on blockchain</p>
                         <p>Discovery teamworking on all project</p>
                         <p>Discovery AS40 and IBM i Langages<br />&nbsp;</p>
-                        <a href="docs/programme_cesi.pdf" id="resp3" class="btn btn-default" target="_blank">See Entreprise Website</a>
+                        <a href="https://www.slib.com" id="resp3" class="btn btn-default" target="_blank">See Entreprise Website</a>
                     </div>
                 </Col>
             </Row>

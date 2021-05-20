@@ -68,11 +68,14 @@ $green: #2a9d8f;
     color: $colorBg;
 }
 
+
+
 .education-block a:hover{
     margin: 20% 0;
 }
 
 #resp1{
+    
     @media (max-width: 768px) {
         margin-bottom: 80px;
     }
@@ -88,6 +91,7 @@ $green: #2a9d8f;
 }
 
 #resp3{
+    margin-top: 50px;
     @media (max-width: 1440px) {
         margin-top: 35px;
     }

@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import {FaBars} from 'react-icons/fa'
 import { menuData } from "../data/MenuData"
 import { openSide } from "../components/Sidebar/index";
+import { Link as Linksmooth, animateScroll as scroll } from "react-scroll";
 import './skillComp'
 
 const Header = () => {
@@ -24,7 +25,7 @@ const Header = () => {
   return (
     <div id="stick">
       <Nav className='navigation' scrollNav={scrollNav}>
-        <NavLink scrollNav={scrollNav} to="/" className="logo">Explorix</NavLink>
+        <NavLink scrollNav={scrollNav} to="/" className="logo">CLAUZEL Clément</NavLink>
         <Bars onClick={openSide} />
         <NavMenu>
           {menuData.map((item, index) => (
@@ -33,7 +34,7 @@ const Header = () => {
               {item.title}
             </NavLink>
           ))}
-          <NavBtnLink scrollNav={scrollNav} className="btn" to="/">Resume</NavBtnLink>
+          <NavBtnLink scrollNav={scrollNav} className="btn" target='_blank' href="docs/CV.pdf">Resume</NavBtnLink>
         </NavMenu>
       </Nav>
     </div>

@@ -12,9 +12,9 @@ import { faHome, faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icon
 
 const Contact = () => {
   return (
-    <section style={{paddingTop: "10%"}}>
+    <section id="contact" style={{paddingTop: "10%"}}>
     <div className="white-divider" />
-    <h2 className="AboutPersonal__Heading">.about(<span id="me2">me.contact</span>)</h2>
+    <h2 className="AboutPersonal__Heading">.<span id="me2">contact</span>()</h2>
     <section class="ftco-section">
 		<div class="container">
 			<div class="row justify-content-center">
