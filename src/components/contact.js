@@ -2,6 +2,7 @@ import React from 'react';
 import '../components/styles/styles.scss'
 import 'react-bootstrap';
 import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
 import './styles/contact.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
