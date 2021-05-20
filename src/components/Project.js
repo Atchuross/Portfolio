@@ -31,12 +31,12 @@ const Project = () => {
                 <li id="litest4">
                     <section className="magic-wall_item lazyloaded" style={{backgroundImage: `url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png")`}}></section>
                     <div className="hover-content vcenter"></div>
-                    <a href="https://github.com/Atchuross/Snake_JS" target="_blank" className="colorbox cboxElement"></a>
+                    <a href="https://github.com/Atchuross/JQuery_Project" target="_blank" className="colorbox cboxElement"></a>
                 </li>
                 <li id="litest5">
                     <section className="magic-wall_item lazyloaded" style={{backgroundImage: `url("https://d33wubrfki0l68.cloudfront.net/21e2a22d0240a5a1088a7ca485328bec4d836c49/b2a49/img/posts/java_logo_640.jpg")`}}></section>
                     <div className="hover-content vcenter"></div>
-                    <a href="https://github.com/Atchuross/Projet_JAVA_DI" target="_blank" className="colorbox cboxElement"></a>
+                    <a href="https://github.com/tomlinus/cesi-crm" target="_blank" className="colorbox cboxElement"></a>
                 </li>
                 <li id="litest6">
                     <section className="magic-wall_item lazyloaded" style={{backgroundImage: `url("https://zupimages.net/up/21/17/8bpa.png")`}}></section>

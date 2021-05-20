@@ -34,7 +34,7 @@ const Header = () => {
               {item.title}
             </NavLink>
           ))}
-          <NavBtnLink scrollNav={scrollNav} className="btn" href="docs/CV.pdf">Resume</NavBtnLink>
+          <NavBtnLink scrollNav={scrollNav} className="btn" target='_blank' href="docs/CV.pdf">Resume</NavBtnLink>
         </NavMenu>
       </Nav>
     </div>
